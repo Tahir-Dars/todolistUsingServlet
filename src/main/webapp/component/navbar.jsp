@@ -1,22 +1,35 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: black;">Navbar</a>
+    <a class="navbar-brand" href="#">Navbar</a>
+    
+    <!-- Horizontal menu -->
     <ul class="navbar-nav d-flex flex-row" style="list-style: none; margin: 0; padding: 0;">
       <li class="nav-item me-3">
-        <a class="nav-link" href="#" style="color: black;">Home</a>
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav-item me-3">
-        <a class="nav-link" href="#" style="color: black;">Link</a>
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
       </li>
       <li class="nav-item me-3">
-        <a class="nav-link" href="#" style="color: black;">Dropdown</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="#" style="color: black;">Action</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="#" style="color: black;">Disabled</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
     </ul>
+    
+    <!-- Search form stays -->
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
   </div>
 </nav>
