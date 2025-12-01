@@ -10,6 +10,18 @@
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
+ <h1 class="text-center text-success">TODO-APP</h1>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6 offset-md-3"> 
+    <div class="card" > 
+    <div class="card-body" > 
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
 
 
 </body>
