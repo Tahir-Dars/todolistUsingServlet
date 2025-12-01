@@ -13,7 +13,7 @@
  <div class="Container">
  <div class="card">
   <div class="card-body">
-    <table class="table table-striped">
+    <table class="table table-striped"  border="1px">
       <thead>
         <tr>
           <th scope="col">TODO_ID</th>
