@@ -18,6 +18,20 @@
     <div class="card-body" > 
     </div>
     </div>
+<form>
+  <div class="mb-3">
+    <label for="todoInput" class="form-label">TODO</label>
+    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp">
+    <div id="todoHelp" class="form-text">Enter the task you want to add.</div>
+</div>
+ <div class="mb-3">
+    <label for="todoInput" class="form-label">Time Window</label>
+    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp">
+    <div id="todoHelp" class="form-text">Enter the time range</div>
+</div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
     
     </div>
     </div>
