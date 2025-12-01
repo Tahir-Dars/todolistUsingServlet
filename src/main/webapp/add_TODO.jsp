@@ -6,8 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link>
+<%@include file="component/allCSS.jsp" %>
 </head>
 <body>
+<%@include file="component/navbar.jsp"%>
 
 
 </body>
