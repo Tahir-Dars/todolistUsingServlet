@@ -7,20 +7,20 @@
 <title>Insert title here</title>
 <%@include file="component/allCSS.jsp" %>
 </head>
-<body>
+<body style="background-color: darkkhaki;" >
 <%@include file="component/navbar.jsp"%>
-<h1 class="text-center text-success">TODO-APP</h1>
+<h1 class="text-center text-success" style="color: #1A2A40;">TODO-APP</h1>
  <div class="Container">
- <div class="card">
+ <div class="card" style="background-color: darkkhaki; border:1px solid darkkhaki; ">
   <div class="card-body">
-    <table class="table table-striped"  border="1px">
-      <thead>
+    <table class="table table-striped"  style="border:1px solid darkkhaki;">
+      <thead style="background-color: #1A2A40;">
         <tr>
-          <th scope="col">TODO_ID</th>
-          <th scope="col">TODO</th>
-          <th scope="col">Time Window</th>
-          <th scope="col">Status</th>
-          <th scope="col">Changing</th>
+          <th scope="col" style="color:darkkhaki;>TODO_ID</th>
+          <th scope="col" style="color:darkkhaki;>TODO</th>
+          <th scope="col"style="color:darkkhaki;>Time Window</th>
+          <th scope="col"style="color:darkkhaki;>Status</th>
+          <th scope="col"style="color:darkkhaki;>Changing</th>
         </tr>
       </thead>
       <tbody>
