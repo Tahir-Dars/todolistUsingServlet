@@ -20,28 +20,29 @@
     <form>
     <div class="mb-3">
     <label for="todoInput" class="form-label" style="color: darkkhaki;">TODO</label>
-    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;">
+    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;" name="todo">
     <div id="todoHelp" class="form-text" style="color: darkkhaki;">Enter the task you want to add.</div>
 </div>
  <div class="mb-3">
     <label for="todoInput" class="form-label">Time Window</label>
-    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;">
+    <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;" name="timeWindow">
     <div id="todoHelp" class="form-text" style="color: darkkhaki;">Enter the time range</div>
 </div>
  <div class="col-md-13 col-sm-6 col-12">
-								<label for="inputState" class="form-label">Status</label> <select
-									id="inputState" class="form-select w-100" style="color: darkkhaki; background-color: #1A2A40;">
-									<option>Completed</option>
-									<option selected>Pending</option>
+		<label for="inputState" class="form-label">Status</label> <select
+		id="inputState" class="form-select w-100" style="color: darkkhaki; background-color: #1A2A40;" name="status">
+		<option selected >--select--</option>
+        <option value="Completed">Completed</option>
+		<option value="Pending">Pending</option>
 								</select>
 							</div>
                            <br>
-                                  <div class="text-center">
-                                  <button type="submit" class="btn btn-primary">ADD</button>
-                                  </div>
-                                                        </form>
-                                                               </div>
-                                                                   </div>
+                        <div class="text-center">
+                 <button type="submit" class="btn btn-primary">ADD</button>
+                 </div>
+                         </form>
+                                 </div>
+                                        </div>
 
     
     </div>
