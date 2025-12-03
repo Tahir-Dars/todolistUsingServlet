@@ -16,11 +16,11 @@
     <table class="table table-striped"  style="border:1px solid darkkhaki;">
       <thead style="background-color: #1A2A40;">
         <tr>
-          <th scope="col" style="color:darkkhaki;>TODO_ID</th>
-          <th scope="col" style="color:darkkhaki;>TODO</th>
-          <th scope="col"style="color:darkkhaki;>Time Window</th>
-          <th scope="col"style="color:darkkhaki;>Status</th>
-          <th scope="col"style="color:darkkhaki;>Changing</th>
+          <th scope="col" style="color:darkkhaki;">TODO_ID</th>
+          <th scope="col" style="color:darkkhaki;">TODO</th>
+          <th scope="col"style="color:darkkhaki;">Time Window</th>
+          <th scope="col"style="color:darkkhaki;">Status</th>
+          <th scope="col"style="color:darkkhaki;">Changing</th>
         </tr>
       </thead>
       <tbody>
@@ -34,15 +34,12 @@
           <a href="" class="btn btn-sm btn-danger">delete</a> 
               </td>
         </tr>
-      
       </tbody>
     </table>
   </div>
 </div>
- 
- 
  </div>
-
-
 </body>
 </html>
+<%--  --%>
+
