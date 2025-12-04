@@ -17,9 +17,12 @@ String todo = req.getParameter("todo");
 		boolean f = dao.addtoDo(todo, timeWindow, status);
 
 		if (f) {
-			System.out.println("Data Entered Syuccessfully !!");
+			//changing code to send these upper attribtes to index.jsp page 
+			session.setAttribute("sucMsg","TODO added successfully!v!");
+			resp.sendRedirect("index.jsp");
 		} else {
-			System.out.println("Error !^! ");
+			session.setAttribute("errMsg", "Failed to add TODO!");
+			    resp.sendRedirect("add_TODO.jsp");
 		}
          }
                }
