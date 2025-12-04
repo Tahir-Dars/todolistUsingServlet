@@ -50,8 +50,26 @@ public class todoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		return list;
-
 	}
+	public Entity getdobyid(int id) {
+		Entity t = null;
+		try {
+			String sql = "select * from todo where TODO=?";
+			PreparedStatement ps02 = con.prepareStatement(sql);
+			ps02.setInt(1, id);
+			ResultSet rs = ps02.executeQuery();
+			while (rs.next()) {
+				t = new Entity();
+				t.setId(rs.getInt(1));
+				t.setTodo(rs.getString(2));
+				t.setTimeWindow(rs.getString(3));
+				t.setStatus(rs.getString(4));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return t;
+	}
+}
 	
