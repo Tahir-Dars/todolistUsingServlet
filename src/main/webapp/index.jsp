@@ -10,6 +10,25 @@
 <body style="background-color: darkkhaki;" >
 <%@include file="component/navbar.jsp"%>
 <h1 class="text-center text-success" style="color: #1A2A40;">TODO-APP</h1>
+<%
+	String sucMsg = (String) session.getAttribute("sucMsg");
+	if (sucMsg != null) {
+	%>
+	<div class="alert alert-success" role="alert"><%=sucMsg%></div>
+	<%
+	session.removeAttribute("sucMsg");
+	}
+	%>
+	
+	<%
+	String errMsg = (String) session.getAttribute("errMsg");
+	if (errMsg != null) {
+	%>
+	<div class="alert alert-danger" role="alert"><%=errMsg%></div>
+	<%
+	session.removeAttribute("errMsg");
+	}
+	%>
  <div class="Container">
  <div class="card" style="background-color: darkkhaki; border:1px solid darkkhaki; ">
   <div class="card-body">
