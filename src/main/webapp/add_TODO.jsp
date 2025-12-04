@@ -24,7 +24,7 @@
     <div id="todoHelp" class="form-text" style="color: darkkhaki;">Enter the task you want to add.</div>
 </div>
  <div class="mb-3">
-    <label for="todoInput" class="form-label">Time Window</label>
+    <label for="todoInput" class="form-label" style="color: darkkhaki;">Time Window</label>
     <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;" name="timeWindow">
     <div id="todoHelp" class="form-text" style="color: darkkhaki;">Enter the time range</div>
 </div>
