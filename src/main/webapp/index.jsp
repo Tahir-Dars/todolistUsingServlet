@@ -1,3 +1,7 @@
+<%@page import="com.entity.Entity"%>
+<%@page import="java.util.List"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="com.DAO.todoDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -43,18 +47,24 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>JSP Learning </td>
-          <td>4pm-5pm</td>
-          <td>pending</td>
-          <td>
-          <a href="" class="btn btn-sm btn-success">Edit</a> 
-          <a href="" class="btn btn-sm btn-danger">delete</a> 
-              </td>
-        </tr>
-      </tbody>
-    </table>
+         <%
+						todoDAO dao = new todoDAO(DBConnect.getConn());
+						List<Entity> todo = dao.getTodo();
+						for (Entity e : todo) {
+						%>
+						<tr>
+							<th scope="row"><%=e.getId()%></th>
+							<td><%=e.getTodo()%></td>
+							<td><%=e.getTimeWindow()%></td>
+							<td><%=e.getStatus()%></td>
+							<td><a href="" class="btn btn-sm btn-success">Edit</a> <a
+								href="" class="btn btn-sm btn-danger">delete</a></td>
+						</tr>
+						<%
+						}
+						%>
+                  </tbody>
+           </table>
   </div>
 </div>
  </div>
