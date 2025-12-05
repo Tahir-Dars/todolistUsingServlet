@@ -25,7 +25,7 @@
 						Entity t = dao.getdobyid(id);
 						
 						%>
-                        <input type="hidden" value="<%=t.getId()%>">
+                        <input type="hidden" value="<%=t.getId()%>" name="id">
 						<form action="addtodo" method="post">
 
 							<div class="mb-3">
