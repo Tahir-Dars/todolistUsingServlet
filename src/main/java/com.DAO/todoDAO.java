@@ -89,7 +89,22 @@ public class todoDAO {
 			e.printStackTrace();
 		}
 		return f;
-
+	}
+	public boolean deletetodo(int id ) {
+		boolean f=false;
+		try {
+			String sql="delete from todo where TODO_ID=?";
+			PreparedStatement ps04=con.prepareStatement(sql);
+			ps04.setInt(1,id);
+			int i=ps04.executeUpdate();
+			if(i==1) {
+				f=true;
+			}
+		}
+		catch(Exception e ) {
+			e.printStackTrace();
+		}
+		return f;
 	}
 }
 	
