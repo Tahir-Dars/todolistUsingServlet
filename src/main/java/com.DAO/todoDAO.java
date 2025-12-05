@@ -71,5 +71,25 @@ public class todoDAO {
 		}
 		return t;
 	}
+	public boolean updateTodo(Entity t) {
+		boolean f = false;
+		try {
+			String sql = "update todo set TODO=?,timWindow=?,status=? where TODO_ID=?";
+			PreparedStatement ps03 = con.prepareStatement(sql);
+			ps03.setString(1, t.getTodo());
+			ps03.setString(2, t.getTimeWindow());
+			ps03.setString(3, t.getStatus());
+			ps03.setInt(4, t.getId());
+
+			int i = ps03.executeUpdate();
+			if (i == 1) {
+				f = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return f;
+
+	}
 }
 	
