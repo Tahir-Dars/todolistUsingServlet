@@ -57,7 +57,7 @@
 							<td><%=e.getTodo()%></td>
 							<td><%=e.getTimeWindow()%></td>
 							<td><%=e.getStatus()%></td>
-							<td><a href="" class="btn btn-sm btn-success">Edit</a> 
+							<td><a href="edit.jsp?id=<%=e.getId()" class="btn btn-sm btn-success">Edit</a> 
                              <a href="delete?id=<%=e.getId()%>" class="btn btn-sm btn-danger">delete</a></td>
 						</tr>
 						<%
