@@ -26,7 +26,7 @@
 						
 						%>
                         <input type="hidden" value="<%=t.getId()%>" name="id">
-						<form action="addtodo" method="post">
+						<form action="update" method="post">
 
 							<div class="mb-3">
 								<label for="todoInput" class="form-label"
@@ -76,5 +76,4 @@
 	</div>
 </body>
 </html>
-</body>
-</html>
+
