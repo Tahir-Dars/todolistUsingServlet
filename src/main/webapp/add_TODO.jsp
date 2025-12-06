@@ -17,7 +17,7 @@
     <div class="card" > 
     <div class="card-body" style="background-color: #1A2A40; border: 1px solid black; border-radius: 8px;"> 
     <h3 class="text-center" style="color: darkkhaki;">Add TODO</h3>
-    <form>
+    <form action="addtodo" method="post">
     <div class="mb-3">
     <label for="todoInput" class="form-label" style="color: darkkhaki;">TODO</label>
     <input type="text" class="form-control" id="todoInput" aria-describedby="todoHelp" style="color: darkkhaki; background-color: #1A2A40;" name="todo">
